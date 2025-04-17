@@ -54,7 +54,7 @@ interface ApiService {
 }
 
 object Api {
-	private const val BASE_URL = "http://192.168.2.18:1234/request.php/" // Replace with your base URL
+	private const val BASE_URL = "http://mr.api.pyrakuma.com/v1/" // Replace with your base URL
 
 	val retrofitService: ApiService by lazy {
 		val gson = GsonBuilder().setLenient().create()
