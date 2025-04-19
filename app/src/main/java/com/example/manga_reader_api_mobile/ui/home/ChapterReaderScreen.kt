@@ -21,7 +21,8 @@ fun ChapterReaderScreen(viewModel: MangaViewModel) {
 		val pagerState = rememberPagerState(initialPage = pages.size-1, pageCount = { pages.size })
 		HorizontalPager(
 			state = pagerState,
-			modifier = Modifier.fillMaxSize()
+			modifier = Modifier.fillMaxSize(),
+            beyondBoundsPageCount = 2
 		) { page ->
 			AsyncImage(
 				model = pages.asReversed()[page].image,

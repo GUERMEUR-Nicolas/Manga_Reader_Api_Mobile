@@ -54,7 +54,7 @@ interface ApiService {
 }
 
 object Api {
-	private const val BASE_URL = "http://mr.api.pyrakuma.com/v1/" // Replace with your base URL
+	private const val BASE_URL = "https://mr.api.vm.pyrakuma.com/v1/"
 
 	val retrofitService: ApiService by lazy {
 		val gson = GsonBuilder().setLenient().create()
